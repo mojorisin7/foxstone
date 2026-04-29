@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 590">
+
+  <defs>
+    <clipPath id="badge-clip">
+      <circle cx="260" cy="195" r="146"/>
+    </clipPath>
+  </defs>
+
+  <!-- Dark circle background -->
+  <circle cx="260" cy="195" r="146" fill="#0D0D0D"/>
+
+  <!-- Badge circle outline -->
+  <circle cx="260" cy="195" r="148" fill="none" stroke="#C8691A" stroke-width="2.5"/>
+
+  <!-- EST. left of circle -->
+  <line x1="30" y1="195" x2="52" y2="195" stroke="#C8691A" stroke-width="1.5"/>
+  <text x="71" y="200" fill="#C8691A"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="13" letter-spacing="2" text-anchor="middle">EST.</text>
+  <line x1="90" y1="195" x2="112" y2="195" stroke="#C8691A" stroke-width="1.5"/>
+
+  <!-- 2014 right of circle -->
+  <line x1="408" y1="195" x2="430" y2="195" stroke="#C8691A" stroke-width="1.5"/>
+  <text x="449" y="200" fill="#C8691A"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="13" letter-spacing="2" text-anchor="middle">2014</text>
+  <line x1="468" y1="195" x2="490" y2="195" stroke="#C8691A" stroke-width="1.5"/>
+
+  <!-- ================================================
+       FOX HEAD — wide cheeks, spread ears, broad silhouette
+       ================================================ -->
+
+  <!-- Orange outer head silhouette -->
+  <path fill="#C8691A" d="
+    M 260,276
+    L 212,264 L 178,232 L 158,178 L 164,138
+    L 178,110 L 192,48
+    L 222,100 L 244,88 L 260,84 L 276,88 L 298,100
+    L 328,48
+    L 342,110 L 356,138 L 362,178
+    L 342,232 L 308,264
+    Z
+  "/>
+
+  <!-- Ear inner detail lines (dark V carved into each ear) -->
+  <line x1="198" y1="58" x2="218" y2="98"
+        stroke="#0D0D0D" stroke-width="5" stroke-linecap="round"/>
+  <line x1="322" y1="58" x2="302" y2="98"
+        stroke="#0D0D0D" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Dark face mask with angular eye cutouts (evenodd) -->
+  <path fill="#0D0D0D" fill-rule="evenodd" d="
+    M 240,97 L 260,90 L 280,97
+    L 318,148 L 324,182
+    L 314,238 L 286,267 L 260,274
+    L 234,267 L 206,238
+    L 196,182 L 202,148
+    Z
+    M 214,136 L 248,116 L 252,156 L 218,169 Z
+    M 306,136 L 272,116 L 268,156 L 302,169 Z
+  "/>
+
+  <!-- Nose (orange downward triangle in the dark mask) -->
+  <polygon fill="#C8691A" points="260,218 252,233 268,233"/>
+
+  <!-- Forehead accent lines between ears -->
+  <line x1="248" y1="91" x2="239" y2="101"
+        stroke="#0D0D0D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="272" y1="91" x2="281" y2="101"
+        stroke="#0D0D0D" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ================================================
+       PINE TREES — orange on dark, clipped to circle
+       ================================================ -->
+  <g clip-path="url(#badge-clip)" fill="#C8691A">
+
+    <!-- Ground -->
+    <rect x="145" y="334" width="230" height="12"/>
+
+    <!-- Tree 1 — far left, short -->
+    <polygon points="179,335 167,335 173,313"/>
+    <polygon points="181,321 168,321 174.5,299"/>
+
+    <!-- Tree 2 — 3 tiers -->
+    <polygon points="197,335 183,335 190,309"/>
+    <polygon points="199,319 185,319 192,293"/>
+    <polygon points="201,299 187,299 194,275"/>
+
+    <!-- Tree 3 — tallest left group -->
+    <polygon points="216,335 201,335 208.5,306"/>
+    <polygon points="218,316 202,316 210,283"/>
+    <polygon points="220,294 204,294 212,261"/>
+
+    <!-- Tree 4 — short -->
+    <polygon points="234,335 220,335 227,313"/>
+    <polygon points="236,320 221,320 228.5,298"/>
+
+    <!-- Tree 5 — CENTRE tallest -->
+    <polygon points="268,335 252,335 260,296"/>
+    <polygon points="270,309 253,309 261.5,275"/>
+    <polygon points="272,283 255,283 263.5,251"/>
+
+    <!-- Tree 6 — short (mirror 4) -->
+    <polygon points="286,335 300,335 293,313"/>
+    <polygon points="284,320 299,320 291.5,298"/>
+
+    <!-- Tree 7 — tallest right group (mirror 3) -->
+    <polygon points="304,335 319,335 311.5,306"/>
+    <polygon points="302,316 318,316 310,283"/>
+    <polygon points="300,294 316,294 308,261"/>
+
+    <!-- Tree 8 — 3 tiers (mirror 2) -->
+    <polygon points="323,335 337,335 330,309"/>
+    <polygon points="321,319 335,319 328,293"/>
+    <polygon points="319,299 333,299 326,275"/>
+
+    <!-- Tree 9 — far right, short (mirror 1) -->
+    <polygon points="341,335 353,335 347,313"/>
+    <polygon points="339,321 352,321 345.5,299"/>
+
+  </g>
+
+  <!-- ================================================
+       FOXSTONE
+       ================================================ -->
+  <text
+    x="260" y="418"
+    fill="#C8691A"
+    font-family="'Playfair Display',Georgia,'Times New Roman',serif"
+    font-size="62" font-weight="700"
+    letter-spacing="5" text-anchor="middle"
+  >FOXSTONE</text>
+
+  <!-- ================================================
+       FORESTRY LTD
+       ================================================ -->
+  <line x1="45"  y1="443" x2="140" y2="443" stroke="#C8691A" stroke-width="1.5"/>
+  <text
+    x="260" y="451"
+    fill="#C8691A"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="13" letter-spacing="7" text-anchor="middle"
+  >FORESTRY LTD</text>
+  <line x1="380" y1="443" x2="475" y2="443" stroke="#C8691A" stroke-width="1.5"/>
+
+  <!-- Bottom rule + diamond -->
+  <line x1="218" y1="471" x2="302" y2="471" stroke="#C8691A" stroke-width="1"/>
+  <polygon fill="#C8691A" points="260,481 269,490 260,499 251,490"/>
+
+</svg>
