@@ -1,32 +1,6 @@
 (function () {
   'use strict';
 
-  // ── Theme toggle ─────────────────────────────────────────────────────────
-  const themeToggle = document.getElementById('theme-toggle');
-  const html = document.documentElement;
-
-  function applyTheme(theme) {
-    if (theme === 'dark') {
-      html.setAttribute('data-theme', 'dark');
-      themeToggle.setAttribute('aria-label', 'Switch to light mode');
-    } else {
-      html.removeAttribute('data-theme');
-      themeToggle.setAttribute('aria-label', 'Switch to dark mode');
-    }
-    localStorage.setItem('foxstone-theme', theme);
-  }
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      var isDark = html.getAttribute('data-theme') === 'dark';
-      applyTheme(isDark ? 'light' : 'dark');
-    });
-    // Sync aria-label with saved state
-    if (html.getAttribute('data-theme') === 'dark') {
-      themeToggle.setAttribute('aria-label', 'Switch to light mode');
-    }
-  }
-
   // ── Hamburger nav toggle ──────────────────────────────────────────────────
   const navToggle = document.querySelector('.nav__toggle');
   const nav = document.querySelector('.nav');

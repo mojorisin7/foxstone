@@ -24,7 +24,7 @@
   --space-3xl: 6rem;
 
   --max-width:     1100px;
-  --header-height: 76px;
+  --header-height: 96px;
   --radius-card:   8px;
   --shadow-card:   0 2px 16px rgba(44,59,31,0.12);
   --transition:    0.25s ease;
@@ -130,10 +130,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
 }
 .header__logo img {
-  height: 160px;
-  margin-top: 50px;
+  height: 120px;
   width: auto;
-  border-radius: 10%;
 }
 
 .header__spacer { flex: 1; }
@@ -265,25 +263,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 1;
   padding-block: var(--space-3xl);
   max-width: 680px;
-}
-.hero__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  color: var(--color-rust);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: var(--space-md);
-}
-.hero__eyebrow::before,
-.hero__eyebrow::after {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 1.5px;
-  background: var(--color-rust);
 }
 .hero__title {
   font-family: var(--font-heading);
@@ -564,10 +543,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__inner { grid-template-columns: 1.5fr 1fr 1fr; }
 }
 .footer__brand-logo {
-  height: 56px;
+  height: 72px;
   width: auto;
   margin-bottom: var(--space-md);
-  border-radius: 50%;
 }
 .footer__brand p { font-size: 0.9rem; opacity: 0.75; max-width: 260px; line-height: 1.6; }
 
@@ -618,37 +596,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   THEME TOGGLE
-   ============================================================ */
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: var(--color-cream);
-  border: 1.5px solid rgba(245,240,232,0.3);
-  flex-shrink: 0;
-  transition: border-color var(--transition), background var(--transition);
-}
-.theme-toggle:hover {
-  border-color: var(--color-cream);
-  background: rgba(245,240,232,0.12);
-}
-.theme-toggle__sun { display: none; }
-
-/* ============================================================
    DARK THEME
    ============================================================ */
 [data-theme="dark"] body {
   background: #0D0D0D;
   color: #A8A090;
 }
-
-/* Toggle icon swap */
-[data-theme="dark"] .theme-toggle__moon { display: none; }
-[data-theme="dark"] .theme-toggle__sun  { display: block; }
 
 /* ---- Header ---- */
 [data-theme="dark"] .header {
