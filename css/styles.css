@@ -229,7 +229,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../images/foxstone-hero.jpeg');
+  background-image: url('../images/foxstone-hero-bw.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -241,12 +241,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     160deg,
     rgba(44,59,31,0.72) 0%,
     rgba(44,59,31,0.55) 60%,
     rgba(0,0,0,0.4) 100%
-  );
+  ); */
 }
 .hero__content {
   position: relative;
